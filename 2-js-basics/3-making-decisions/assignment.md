@@ -31,6 +31,12 @@ let allStudents = [
 ]
 
 let studentsWhoPass = [];
+
+for (let student in allStudents) {
+  if ((allStudents[student] >= 3) || (allStudents[student] !== 'C-')) {
+    studentsWhoPass.push(allStudents[student]);
+  }
+}
 ```
 
 ## Rubric
